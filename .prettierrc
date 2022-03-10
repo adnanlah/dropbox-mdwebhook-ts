@@ -1,0 +1,7 @@
+{
+  "printWidth": 100,
+  "trailingComma": "none",
+  "parser": "typescript",
+  "endOfLine": "lf",
+  "semi": false
+}

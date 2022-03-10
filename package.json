@@ -1,0 +1,53 @@
+{
+  "name": "dropbox-mdwebhook-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adnanlah/dropbox-mdwebhook-ts.git",
+  "description": "A sample app that uses webhooks to convert Markdown files to HTML, built with Typescript.",
+  "keywords": [
+    "express",
+    "typescript",
+    "dropbox",
+    "webhook",
+    "expressjs",
+    "dropbox-api",
+    "dropbox-sdk"
+  ],
+  "homepage": "https://dropbox-webhook-ts.herokuapp.com",
+  "author": "Adnan Lahrech <lahadn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && yarn copy-static-assets",
+    "copy-static-assets": "ts-node copyStaticAssets.ts",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/src/index.js",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "dropbox": "^10.24.0",
+    "express": "^4.17.3",
+    "nunjucks": "^3.2.3",
+    "redis": "^4.0.3",
+    "showdown": "^2.0.0",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.18",
+    "@types/node-fetch": "^2.6.1",
+    "@types/nunjucks": "^3.2.1",
+    "@types/shelljs": "^0.8.11",
+    "@types/showdown": "^1.9.4",
+    "@types/supertest": "^2.0.11",
+    "jest": "^27.5.1",
+    "shelljs": "^0.8.5",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.3",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.5.5"
+  }
+}
